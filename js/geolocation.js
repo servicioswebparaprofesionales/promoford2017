@@ -1,12 +1,12 @@
-$(function() {
+$( document ).ready(function() {
  
 	// Geolocation information
-	var geo_api_url = "http://ip-api.com/json/";
+	var geo_api_url = "https://ipapi.co/json";
 	var form = $("form");
 	if (form.length > 0) {
 		$.getJSON(geo_api_url, function(data){
 			//console.log(data);
-			if (data.status == 'success') {
+			if (data.postal !== 0) {
 				if ($('#geo_data_ciudad').length == 0 ) {
 					var i1 = $("<input>");
 						i1.attr({"type":"hidden","name":"geo_data_ciudad","id":"geo_data_ciudad"});
@@ -18,10 +18,10 @@ $(function() {
 				if ($('#geo_data_provincia').length == 0 ) {
 					var i2 = $("<input>");
 						i2.attr({"type":"hidden","name":"geo_data_provincia","id":"geo_data_provincia"});
-						i2.val(data.regionName);
+						i2.val(data.region);
 						i2.appendTo(form);
 				}else{
-					$('#geo_data_provincia').val(data.regionName);
+					$('#geo_data_provincia').val(data.region);
 				}
 				if ($('#geo_data_pais').length == 0 ) {
 					var i3 = $("<input>");

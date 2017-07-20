@@ -1,4 +1,4 @@
-$(function() {
+$( document ).ready(function() {
 	var emailreg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
 	$(".boton").click(function(){
