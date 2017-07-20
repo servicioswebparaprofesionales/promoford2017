@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin:0px;padding:0px;}
+
+body{background:#385267 url(../images/bg-body.jpg) no-repeat top center; text-align:left; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; overflow:auto; min-height:900px;-webkit-background-size: 1920px 840px;}
+
+img{ border:0}
+a{ text-decoration:none; color:#787878}
+a:hover{ text-decoration:underline}
+ul, li, p { list-style:none; padding:0px; margin:0px}
+
+#contenido { position:relative; width:990px; margin:0 auto}
+.content { width:990px; height:783px; float:left; position:relative}
+
+
+.texto-1 { position:absolute; top:285px; left:0px; font-size:58px; text-align:left; font-weight:bolder; width:100%; color:#fff;; text-moz-text-shadow:#333 2px 2px 2px; -webkit-text-shadow:#333 2px 2px 2px;text-shadow:#333 2px 2px 2px;}
+
+h1 { color:#375267; font-size:32px !important; -moz-text-shadow:#fff 2px 2px 10px; -webkit-text-shadow:#fff 2px 2px 10px;text-shadow:#fff 2px 2px 10px;}
+
+.texto-3 { position:absolute; top:740px; left:0px; font-size:14px; text-align:center; width:100%; color:#fff; text-transform:uppercase; padding:10px 20px; text-shadow:#385267 2px 2px 16px; border-radius:6px;
+background: #38a0d1; /* Old browsers */
+background: -moz-linear-gradient(top,  #38a0d1 0%, #204e74 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#38a0d1), color-stop(99%,#204e74)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #38a0d1 0%,#204e74 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #38a0d1 0%,#204e74 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #38a0d1 0%,#204e74 99%); /* IE10+ */
+background: linear-gradient(to bottom,  #38a0d1 0%,#204e74 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38a0d1', endColorstr='#204e74',GradientType=0 ); /* IE6-9 */
+}
+
+.formulario { position:absolute; width:221px; right:20px; top:-23px;}
+form { width:221px; margin-top:53px}
+form span { color:#FFF}
+.formulario p { position:absolute; top:29px; right:0px; font-size:16px;-moz-text-shadow:1px 1px 2px #2d2d2d; -webkit-text-shadow: 1px 1px 2px #2d2d2d;text-shadow:1px 1px 2px #2d2d2d; text-align:center; font-family:Arial, Helvetica, sans-serif; width:221px; text-align:center; color:#FFF}
+
+.enviado { width:268px; height:283px; position:absolute; top:0px !important; right:20px; background:url(../images/bg-enviado.jpg); text-align:center; font-size:16px;-moz-text-shadow:1px 1px 2px #2d2d2d; -webkit-text-shadow: 1px 1px 2px #2d2d2d;text-shadow:1px 1px 2px #2d2d2d; text-align:center; font-family:Arial, Helvetica, sans-serif; color:#FFF; padding-top:76px}
+
+
+
+
+.contacto input[type='text']:focus, .contacto textarea:focus{
+	outline: none;
+}
+.contacto input[type='text'].invalido, .contacto textarea.invalido{
+}
+.contacto input[type='submit']{background:url(../images/btn-enviar.png) top no-repeat; width:135px; height:51px; display:block; margin:12px 42px 0 0; cursor:pointer; float:right; border:none;}
+.contacto input[type='submit']:hover{ background-position:bottom}
+
+.error{
+    background-color: #b92020;
+    border-radius: 4px 4px 4px 4px;
+	border:#2b323b 1px solid;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    padding: 6px 12px;
+    position: absolute;
+	left:-230px;
+	top:-4px;
+	text-align:right;
+	width:180px;
+	-moz-box-shadow:0px 0px 4px #3b4652; -webkit-box-shadow: 0px 0px 4px #3b4652;box-shadow:0px 0px 4px #3b4652;
+}
+.error:before{
+	background:url(../images/flecha.html);
+    display: block;
+    height: 11px;
+    right: -160px;
+    position: absolute;
+    top: 78px;
+    width: 10px;
+}
+.error.jxBefore{ background-color:#2196f3;}
+.error.jxSuccess{ background-color:#4caf50;}
+.error.jxError{ background-color:#bbb;}
+.result_fail{
+    background:url(../images/bg-enviado.png);
+    color: white;
+    font-weight: bold;
+    padding: 90px 0 0 0;
+	width:284px;
+	height:107px;
+    text-align: center;
+	display:block;
+	z-index:200;
+	position:absolute;
+	right:0px;
+	top:110px; z-index:9999}
+	
+.result_ok{
+    background:url(../images/bg-enviado.png);
+    color: white;
+    font-weight: bold;
+    padding: 90px 0 0 0;
+	width:284px;
+	height:107px;
+    text-align: center;
+	display:block;
+	z-index:200;
+	position:absolute;
+	right:0px;
+	top:110px; z-index:9999}
+	
+.agradecimiento{
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+	width:221px;
+    text-align: center;
+	display:block;
+	z-index:200;
+	position:absolute;
+	left:-20px;
+	top:230px;}
+
+.form-div { position:relative; float:left; width:221px; margin-bottom:8px}
+.form-div ul li { position:relative; float:left;color:#FFF;}
+.form-div ul  { position:relative; float:left; width:280px}
+
+.form-div input {  width:211px; height:33px; margin-bottom:0px; position:relative; float:left; border:none; padding-left:10px; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; -moz-text-shadow:1px 1px 2px #fff; -webkit-text-shadow: 1px 1px 2px #fff;text-shadow:1px 1px 2px #fff; background:#FFF; border-radius:6px; box-shadow:inset 2px 2px 2px #808080}
+
+.form-div textarea {  width:211px; height:42px; margin-bottom:0px; position:relative; float:left; border:none; padding-left:10px; padding-top:7px; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; -moz-text-shadow:1px 1px 2px #fff; -webkit-text-shadow: 1px 1px 2px #fff;text-shadow:1px 1px 2px #fff; background:#FFF; border-radius:6px; box-shadow:inset 2px 2px 2px #808080}
+
+.form-div input.Telefono {  width:170px; margin-left:8px}
+
+.form-div input.Cod {  width:30px; padding-left:3px !important}
+
+.form-div select {  width:221px; height:33px; margin-bottom:0px; position:relative; float:left; border:none; padding-left:10px; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; -moz-text-shadow:1px 1px 2px #fff; -webkit-text-shadow: 1px 1px 2px #fff;text-shadow:1px 1px 2px #fff; background:#FFF; border-radius:6px; box-shadow:inset 2px 2px 2px #808080}
+
+.footer { width:990px; position:absolute; top:800px; left:0px; text-align:center; padding:16px; color:#FFF}
