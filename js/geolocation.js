@@ -55,7 +55,7 @@ $( document ).ready(function() {
 
 	function autoSelectProvincia() {
 		var geo_data_provincia = $('input[name="geo_data_provincia"]');
-		var input = $('select[name="Provincia"]');
+		var input = $('#provincia');
 		
 		if (input.length>0 && geo_data_provincia.length >0 && geo_data_provincia.val() != "") {
 			var geoProvincia = limpiarNombreProvincia(geo_data_provincia.val());
