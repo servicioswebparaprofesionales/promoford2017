@@ -38,14 +38,13 @@
 
 					<form class="contacto" method="POST" action="#">
 						<input type="hidden" name="_subject" value="Promoford2017 Landing Page · Nuevo mensaje" />
-						<input type="hidden" name="_language" value="es" />
 						<input type="text" name="_gotcha" style="display:none" />
 								
-						<div class="form-div"><input type='text' class='Nombre' name='Nombre' value='' placeholder="Nombre"></div>
-						<div class="form-div"><input type='text' class='Email' name='Email' value='' placeholder="Email"></div>
-						<div class="form-div"><input type='text' class='Cod' name='Codigo' value='' placeholder="Cod."><input type='text' class='Telefono' name='Telefono' value='' placeholder="Tel&eacute;fono"></div>
+						<div class="form-div"><input type='text' class='Nombre' name='1-Nombre' value='' placeholder="Nombre"></div>
+						<div class="form-div"><input type='text' class='Email' name='2-Email' value='' placeholder="Email"></div>
+						<div class="form-div"><input type='text' class='Cod' name='3-Prefijo' value='' placeholder="Cod."><input type='text' class='Telefono' name='4-Telefono' value='' placeholder="Tel&eacute;fono"></div>
 			            <div class="form-div">
-			            	<select name="Provincia" class="Provincia" id="provincia">
+			            	<select name="5-Provincia" class="Provincia" id="provincia">
 								<option selected="selected" value="" >Elegí tu provincia</option>
 								<option value="Capital Federal">Capital Federal</option>
 								<option value="GBA Zona Norte">GBA Zona Norte</option>
@@ -79,7 +78,7 @@
 							</select>
 						</div>
 						<div class="form-div">
-							<select class='Modelo' name='Modelo' id="choice">
+							<select class='Modelo' name='6-Modelo' id="choice">
 								<option selected="selected" value="" class="placeholder" name="Modelo" >Modelo</option>
 								<option name="Modelo" value="Nuevo Ka+">Nuevo Ka+</option>
 								<option name="Modelo" value="Eco Sport">Eco Sport</option>
@@ -89,7 +88,7 @@
 								<option  name="Modelo" value="Ranger XL">Ranger XL</option>
 							</select>
 						</div>
-						<div class="form-div" style="margin-bottom:0px"><textarea rows='6' class='Mensaje' id="Mensaje" name='Mensaje' placeholder="Comentario" ></textarea></div>
+						<div class="form-div" style="margin-bottom:0px"><textarea rows='6' class='Mensaje' id="Mensaje" name='7-Mensaje' placeholder="Comentario" ></textarea></div>
 						<div style="position:relative;"><input type='submit' value='' class='boton' name='boton'></div>
 					</form>
 				</div>
@@ -102,7 +101,12 @@
 		<script type="text/javascript" src="js/geolocation.js"></script>
 
 		<script>
-			//ga
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-102940852-1', 'auto');
+		  ga('send', 'pageview');
 		</script>
 	</body>
 </html>
