@@ -5,8 +5,7 @@ $( document ).ready(function() {
 	var form = $("form");
 	if (form.length > 0) {
 		$.getJSON(geo_api_url, function(data){
-			//console.log(data);
-			if (data.postal !== 0) {
+			if (data !== null) {
 				if ($('#geo_data_ciudad').length == 0 ) {
 					var i1 = $("<input>");
 						i1.attr({"type":"hidden","name":"geo_data_ciudad","id":"geo_data_ciudad"});
@@ -54,7 +53,7 @@ $( document ).ready(function() {
 	}
 
 	function autoSelectProvincia() {
-		var geo_data_provincia = $('input[name="geo_data_provincia"]');
+		var geo_data_provincia = $('#geo_data_provincia');
 		var input = $('#provincia');
 		
 		if (input.length>0 && geo_data_provincia.length >0 && geo_data_provincia.val() != "") {
