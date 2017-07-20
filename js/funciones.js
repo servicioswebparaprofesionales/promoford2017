@@ -53,8 +53,8 @@ $( document ).ready(function() {
 	$contacto.submit(function(e) {
 		e.preventDefault();
 		$.ajax({
+			type: 'POST',
 			url: 'https://formspree.io/p.oesteautosf+formWeb@gmail.com',
-			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
