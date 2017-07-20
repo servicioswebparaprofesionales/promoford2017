@@ -8,29 +8,44 @@ $(function() {
 			//console.log(data);
 			if (data.status == 'success') {
 				if ($('#geo_data_ciudad').length == 0 ) {
-					$("<input>").attr({"type":"hidden","name":"geo_data_ciudad","id":"geo_data_ciudad"}).val(data.city).appendTo(form);
+					var i1 = $("<input>");
+						i1.attr({"type":"hidden","name":"geo_data_ciudad","id":"geo_data_ciudad"});
+						i1.val(data.city);
+						i1.appendTo(form);
 				}else{
 					$('#geo_data_ciudad').val(data.city);
 				}
 				if ($('#geo_data_provincia').length == 0 ) {
-					$("<input>").attr({"type":"hidden","name":"geo_data_provincia","id":"geo_data_provincia"}).val(data.regionName).appendTo(form);
+					var i2 = $("<input>");
+						i2.attr({"type":"hidden","name":"geo_data_provincia","id":"geo_data_provincia"});
+						i2.val(data.regionName);
+						i2.appendTo(form);
 				}else{
 					$('#geo_data_provincia').val(data.regionName);
 				}
 				if ($('#geo_data_pais').length == 0 ) {
-					$("<input>").attr({"type":"hidden","name":"geo_data_pais","id":"geo_data_pais"}).val(data.country).appendTo(form);
+					var i3 = $("<input>");
+						i3.attr({"type":"hidden","name":"geo_data_pais","id":"geo_data_pais"});
+						i3.val(data.country_name);
+						i3.appendTo(form);
 				}else{
-					$('#geo_data_pais').val(data.country);
+					$('#geo_data_pais').val(data.country_name);
 				}
 				if ($('#geo_data_lat').length == 0 ) {
-					$("<input>").attr({"type":"hidden","name":"geo_data_lat","id":"geo_data_lat"}).val(data.lat).appendTo(form);
+					var i4 = $("<input>");
+						i4.attr({"type":"hidden","name":"geo_data_lat","id":"geo_data_lat"});
+						i4.val(data.latitude);
+						i4.appendTo(form);
 				}else{
-					$('#geo_data_lat').val(data.lat);
+					$('#geo_data_lat').val(data.latitude);
 				}
 				if ($('#geo_data_long').length == 0 ) {
-					$("<input>").attr({"type":"hidden","name":"geo_data_long","id":"geo_data_long"}).val(data.lon).appendTo(form);
+					var i5 = $("<input>");
+						i5.attr({"type":"hidden","name":"geo_data_long","id":"geo_data_long"});
+						i5.val(data.longitude);
+						i5.appendTo(form);
 				}else{
-					$('#geo_data_long').val(data.lon);
+					$('#geo_data_long').val(data.longitude);
 				}
 				
 				autoSelectProvincia();

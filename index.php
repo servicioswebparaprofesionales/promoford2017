@@ -1,12 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="images/favicon.png" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="assets/animate.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,600,500,700,300,200,100' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,600,500,700,300,200,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
 		<title>ALCANZA LA CIMA DE TUS SUEÑOS</title>
 
@@ -16,9 +16,6 @@
 		<meta name="revisit-after" content="1 month" />
 		<meta name="rating" content="General" />
 		<meta name="robot" content="index, follow" />
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/funciones.js"></script>
-		<script type="text/javascript" src="js/geolocation.js"></script>
 	</head>
 
 	<body>
@@ -99,6 +96,10 @@
 		    </div>
 		</div>
 		<div class="footer-politicas" style="position: fixed;background: #375267;left: 0;width: 100%;min-height: 10px;bottom: 0;color: black;text-align: center;padding: 5px 0;">© Promoford2017 <!--| <a href="mailto:info@promoford2017.com" style="color:black">info@promoford2017.com</a> -->| <a href="politicas.php" target="_blank" style="color:black">Politicas de privacidad</a></div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
+		<script type="text/javascript" src="js/geolocation.js"></script>
 
 		<script>
 			//ga
