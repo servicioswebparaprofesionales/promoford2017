@@ -59,15 +59,16 @@ $( document ).ready(function() {
 			dataType: 'json',
 			beforeSend: function() {
 				$(".error").fadeOut().remove();
-				$(".boton").after('<span class="error jxBefore">Enviando mensaje...</span>');
+				$(".boton").after('<span class="error jxBefore">Enviando...</span>');
 				$(".boton").click(function() { return false; });
 			},
 			success: function(data) {
 				$(".error").fadeOut().remove();
-				$(".boton").after('<span class="error jxSuccess">¡Mensaje enviado!</span>');
+				$(".boton").after('<span class="error jxSuccess">¡Enviado!<br>En breve te contactaremos</span>');
 			},
 			error: function(err) {
-				$(".boton").after('<span class="error jxError">Disculpe, mensaje no enviado</span>');
+				$(".error").fadeOut().remove();
+				$(".boton").after('<span class="error jxError">Disculpe, debido a un error debe recargar la p&aacute;gina y cargar los datos de nuevo</span>');
 			}
 		});
 	});
